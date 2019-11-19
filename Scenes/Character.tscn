@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Character.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Models/shotgun.obj" type="ArrayMesh" id=2]
@@ -8,8 +8,6 @@ radius = 0.5
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.4, 0.1, 0.4 )
-
-[sub_resource type="PlaneShape" id=3]
 
 [node name="Character" type="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.84887, 0 )
@@ -64,9 +62,3 @@ material/29 = null
 material/30 = null
 material/31 = null
 material/32 = null
-
-[node name="StaticBody" type="StaticBody" parent="."]
-
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 100, 0, 0, 0, -4.37114e-006, 1, 0, -100, -4.37114e-008, 0, -2.26117, 0 )
-shape = SubResource( 3 )
